@@ -5,67 +5,92 @@
   <title>Ayush Kumar - Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      margin: 0;
+    * {
+      box-sizing: border-box;
       padding: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
+      margin: 0;
+    }
+
+    body {
       height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
-      animation: fadeIn 1s ease-in-out;
+      animation: fadeIn 1s ease;
     }
 
-    .container {
-      text-align: center;
+    .card {
       background: rgba(255, 255, 255, 0.1);
-      padding: 40px;
-      border-radius: 16px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-      max-width: 500px;
+      border-radius: 20px;
+      padding: 40px 30px;
       width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      animation: popIn 0.8s ease;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+      object-fit: cover;
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
     }
 
     h1 {
+      font-size: 28px;
       margin-bottom: 10px;
-      font-size: 36px;
     }
 
     p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 15px 30px;
       font-size: 16px;
-      background-color: white;
-      color: #2575fc;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: all 0.3s ease;
+      margin-bottom: 30px;
+      opacity: 0.9;
     }
 
-    a.button:hover {
-      background-color: #e6e6e6;
+    .button {
+      background: white;
+      color: #764ba2;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .button:hover {
       transform: scale(1.05);
+      background: #f0f0f0;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    @keyframes popIn {
+      0% { transform: scale(0.95); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="card">
+    <!-- Optional: Replace src with your actual image if you have one -->
+    <img src="https://avatars.githubusercontent.com/u/193505094?v=4" alt="Profile Picture" class="profile-pic">
     <h1>Ayush Kumar</h1>
-    <p>Thanks for visiting! You can view or download my resume below.</p>
+    <p>Welcome to my resume site. Click below to view or download the PDF version of my resume.</p>
     <a href="https://ayushkr5561.github.io/Ayush_Kumar_resume.pdf" class="button" target="_blank">
       📄 View / Download Resume
     </a>
