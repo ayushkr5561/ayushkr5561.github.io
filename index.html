@@ -3,31 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <title>Ayush Kumar - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      animation: fadeIn 1s ease-in-out;
     }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
     a.button {
       display: inline-block;
-      padding: 15px 25px;
-      font-size: 18px;
-      color: white;
-      background-color: #0078D7;
+      padding: 15px 30px;
+      font-size: 16px;
+      background-color: white;
+      color: #2575fc;
       text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
     }
+
     a.button:hover {
-      background-color: #005ea3;
+      background-color: #e6e6e6;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <h1>Ayush Kumar</h1>
-  <p>Welcome to my resume page!</p>
-  <a href="https://ayushkr5561.github.io/Ayush_Kumar_resume.pdf" class="button" target="_blank">View / Download Resume</a>
+  <div class="container">
+    <h1>Ayush Kumar</h1>
+    <p>Thanks for visiting! You can view or download my resume below.</p>
+    <a href="https://ayushkr5561.github.io/Ayush_Kumar_resume.pdf" class="button" target="_blank">
+      📄 View / Download Resume
+    </a>
+  </div>
 </body>
 </html>
